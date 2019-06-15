@@ -1,0 +1,4 @@
+dotnet/obj
+dotnet/wwwroot/dist/
+.vscode/
+.DS_Store
