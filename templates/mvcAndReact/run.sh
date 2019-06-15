@@ -1,0 +1,1 @@
+dotnet run --project dotnet/mvcAndReact.csproj
