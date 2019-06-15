@@ -6,7 +6,7 @@ class App extends Component{
   render(){
     return(
       <div className="App">
-        <h1> Hello, World! WOW test changes from mvcReact!!!</h1>
+        <h1> Hello, World! clean now</h1>
       </div>
     );
   }
