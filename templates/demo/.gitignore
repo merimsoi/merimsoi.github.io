@@ -1,7 +1,0 @@
-dotnet/obj
-dotnet/wwwroot/dist/
-dotnet/bin/
-dotnet/bin/Debug
-.vscode/
-.DS_Store
-node_modules
