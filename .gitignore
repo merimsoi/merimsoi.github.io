@@ -1,4 +1,5 @@
 demo/dotnet/bin
+demo/dotnet/bin/Debug
 demo/dotnet/obj
 demo/dotnet/wwwroot/dist
 demo/js/node_modules
