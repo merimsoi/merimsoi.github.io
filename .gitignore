@@ -3,3 +3,6 @@ demo/dotnet/bin/Debug
 demo/dotnet/obj
 demo/dotnet/wwwroot/dist
 demo/js/node_modules
+
+templates/react/react-from-templates/node_modules
+templates/react/reactWithBabelPreprocessor/node_modules
