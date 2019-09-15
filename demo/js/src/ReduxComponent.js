@@ -1,5 +1,4 @@
 import { connect } from 'react-redux'
-import { fetchList } from './actions'
 import ReduxList from './ReduxList'
 
 const mapStateToProps = state => {
@@ -11,7 +10,7 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
   return {
     onFetchList: id => {     
-      dispatch(fetchList("i am list haha!"))
+      dispatch({type: 'FETCH_LIST'})
     }
   }
 }

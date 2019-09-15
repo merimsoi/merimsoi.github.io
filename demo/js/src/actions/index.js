@@ -1,5 +1,4 @@
-export const fetchList = list => ({
-    type: 'FETCH_LIST',
-    list
-  })
+  export const FETCH_LIST = 'FETCH_LIST'
+  export const FETCH_LIST_SUCCEED = 'FETCH_LIST_SUCCEED'
+  export const FETCH_LIST_FAILED = 'FETCH_LIST_FAILED'
   
