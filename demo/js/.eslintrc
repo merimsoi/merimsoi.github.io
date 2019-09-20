@@ -1,0 +1,28 @@
+{
+    "extends": [
+        "prettier"
+    ],
+    "plugins": [
+        "prettier"
+    ],
+    "env": {
+        "jest": true
+    },
+    "parser": "babel-eslint",
+    "rules": {
+        "prettier/prettier": [
+            "error"
+        ],
+        "import/no-extraneous-dependencies": "off",
+        "import/prefer-default-export": "off",
+        "arrow-parens": "off",
+        "max-len": "off",
+        "consistent-return": "off",
+        "object-curly-newline": "off",
+        "no-alert": "off",
+        "import/first": "off",
+        "no-underscore-dangle": "off",
+        "no-use-before-define": "off",
+        "class-methods-use-this": "off"
+    }
+}
