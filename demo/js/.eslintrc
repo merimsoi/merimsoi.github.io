@@ -1,28 +1,77 @@
 {
-    "extends": [
-        "prettier"
+  "extends": [
+    "airbnb",
+    "prettier"
+  ],
+  "plugins": [
+    "prettier"
+  ],
+  "globals": {
+    "__config__": true
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+    "allowImportExportEverywhere": true
+  },
+  "rules": {
+    "prettier/prettier": [
+      "error"
     ],
-    "plugins": [
-        "prettier"
+    "react/prop-types": "off",
+    "react/jsx-filename-extension": "off",
+    "react/prefer-stateless-function": "warn",
+    "react/no-array-index-key": "warn",
+    "react/jsx-one-expression-per-line": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "import/prefer-default-export": "off",
+    "arrow-parens": "off",
+    "import/no-extraneous-dependencies": "off",
+    "max-len": "off",
+    "jsx-a11y/label-has-associated-control": [
+      "warn",
+      {
+        "required": {
+          "some": [
+            "nesting",
+            "id"
+          ]
+        }
+      }
     ],
-    "env": {
-        "jest": true
-    },
-    "parser": "babel-eslint",
-    "rules": {
-        "prettier/prettier": [
-            "error"
+    "jsx-a11y/label-has-for": [
+      "warn",
+      {
+        "required": {
+          "some": [
+            "nesting",
+            "id"
+          ]
+        }
+      }
+    ],
+    "consistent-return": "off",
+    "react/no-did-mount-set-state": "off",
+    "react/destructuring-assignment": "off",
+    "prefer-destructuring": "off",
+    "object-curly-newline": "off",
+    "no-alert": "off",
+    "import/first": "off",
+    "no-underscore-dangle": "off",
+    "no-use-before-define": "off",
+    "class-methods-use-this": "off",
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        "components": [
+          "Link"
         ],
-        "import/no-extraneous-dependencies": "off",
-        "import/prefer-default-export": "off",
-        "arrow-parens": "off",
-        "max-len": "off",
-        "consistent-return": "off",
-        "object-curly-newline": "off",
-        "no-alert": "off",
-        "import/first": "off",
-        "no-underscore-dangle": "off",
-        "no-use-before-define": "off",
-        "class-methods-use-this": "off"
-    }
+        "specialLink": [
+          "to"
+        ]
+      }
+    ],
+    "import/no-named-as-default": "off"
+  }
 }
