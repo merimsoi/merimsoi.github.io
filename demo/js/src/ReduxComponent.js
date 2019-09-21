@@ -1,24 +1,23 @@
-import { connect } from 'react-redux'
-import ReduxList from './ReduxList'
+import { connect } from 'react-redux';
+import ReduxList from './ReduxList';
 
 const mapStateToProps = state => {
-  return {   
-    list: state.todos.list
-  }
-}
+  return {
+    list: state.todos.list,
+  };
+};
 
 const mapDispatchToProps = dispatch => {
   return {
-    onFetchList: id => {     
-      dispatch({type: 'FETCH_LIST'})
-    }
-  }
-}
+    onFetchList: id => {
+      dispatch({ type: 'FETCH_LIST' });
+    },
+  };
+};
 
 const ReduxComponent = connect(
   mapStateToProps,
   mapDispatchToProps
-)(ReduxList)
+)(ReduxList);
 
-export default ReduxComponent
-
+export default ReduxComponent;

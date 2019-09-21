@@ -10,16 +10,8 @@ export default function Artists() {
         <div id="card-body" key={artist.id}>
           <div className="card">
             <h2>{artist.name}</h2>
-            <p>
-genre:
-              {' '}
-              {artist.genre}
-            </p>
-            <p>
-Albums released:
-              {' '}
-              {artist.albums}
-            </p>
+            <p>genre: {artist.genre}</p>
+            <p>Albums released: {artist.albums}</p>
           </div>
         </div>
       ))}
