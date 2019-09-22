@@ -3,8 +3,8 @@ import Loader from './Loader';
 import ErrorBoundary from './ErrorBoundary';
 // import asyncComponent from './AsyncComponent';
 // const Artists = React.lazy(()=>import('./Artists'));
-// const MyList = React.lazy(()=> import('./MyList'));
-const ReduxComponent = React.lazy(() => import('./ReduxComponent'));
+const MyCustomList = React.lazy(() => import('./MyCustomList'));
+// const ReduxComponent = React.lazy(() => import('./ReduxComponent'));
 
 // const MyFailList = React.lazy(()=> import('./MyFailList'));
 
@@ -16,7 +16,7 @@ export default function MainContainer() {
       <ErrorBoundary>
         <Suspense fallback={<Loader />}>
           {/* <MyList/> */}
-          <ReduxComponent />
+          <MyCustomList />
         </Suspense>
       </ErrorBoundary>
       {/* <ErrorBoundary   >
