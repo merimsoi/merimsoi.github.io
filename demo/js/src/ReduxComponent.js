@@ -9,7 +9,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    onFetchList: id => {
+    onFetchList: () => {
       dispatch({ type: 'FETCH_LIST' });
     },
   };

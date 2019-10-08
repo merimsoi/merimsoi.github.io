@@ -1,31 +1,42 @@
 import React, { Suspense } from 'react';
 import Loader from './Loader';
 import ErrorBoundary from './ErrorBoundary';
-// import asyncComponent from './AsyncComponent';
-// const Artists = React.lazy(() => import('./Artists'));
+import asyncComponent from './AsyncComponent';
+
+const Artists = React.lazy(() => import('./Artists'));
+const MyStateList = React.lazy(() => import('./MyStateList'));
+const ReduxComponent = React.lazy(() => import('./ReduxComponent'));
 const CacheComponent = React.lazy(() => import('./CacheComponent'));
-// const ReduxComponent = React.lazy(() => import('./ReduxComponent'));
+const MyAsyncStateList = asyncComponent(() => import('./MyStateList'));
 
 // const MyFailList = React.lazy(()=> import('./MyFailList'));
-
-// const AsyncMyList = asyncComponent(() => import("./MyList"));
 
 export default function MainContainer() {
   return (
     <div>
-      {/* <ErrorBoundary>
+      <ErrorBoundary>
         <Suspense fallback={<Loader />}>
           <Artists />
         </Suspense>
-      </ErrorBoundary> */}
-      {/* <ErrorBoundary>
+      </ErrorBoundary>
+      <ErrorBoundary>
         <Suspense fallback={<Loader />}>
-          <MyList />
+          <MyStateList />
         </Suspense>
-      </ErrorBoundary> */}
+      </ErrorBoundary>
+      <ErrorBoundary>
+        <Suspense fallback={<Loader />}>
+          <ReduxComponent />
+        </Suspense>
+      </ErrorBoundary>
       <ErrorBoundary>
         <Suspense fallback={<Loader />}>
           <CacheComponent />
+        </Suspense>
+      </ErrorBoundary>
+      <ErrorBoundary>
+        <Suspense fallback={<Loader />}>
+          <MyAsyncStateList />
         </Suspense>
       </ErrorBoundary>
     </div>

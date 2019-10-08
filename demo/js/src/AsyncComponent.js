@@ -11,18 +11,16 @@ export default function asyncComponent(importComponent) {
     }
 
     async componentDidMount() {
-      console.log('im ahere');
+      console.log('AsyncComponent componentDidMount');
       const { default: component } = await importComponent();
 
-      this.setState({
-        component,
-      });
+      this.setState({ component });
     }
 
     render() {
       const C = this.state.component;
 
-      return C ? <C {...this.props} /> : <div>999</div>;
+      return C ? <C {...this.props} /> : null;
     }
   }
 
