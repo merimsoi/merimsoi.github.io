@@ -11,7 +11,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace mvcAndReact.Controllers
 {
-    [AllowAnonymous]       
+    [AllowAnonymous]
     public class DemoEndpoints : Controller
     {
         [Route("api/getFailedResponse")]
@@ -29,10 +29,12 @@ namespace mvcAndReact.Controllers
         public JsonResult GetSucess()
         {
             Thread.Sleep(5000);
-            var list = new List<string>();
-            list.Add("First");
-            list.Add("Second");
-            list.Add("Third");
+            var list = new List<Artist>();
+            list.Add(new Artist { Id = "1", Name = "Davido", Genre = "Afro-Pop", Albums = "2", Counrty = "Nigeria" });
+            list.Add(new Artist { Id = "2", Name = "AKA", Genre = "Hip-Hop", Albums = "4", Counrty = "South-Africa" });
+            list.Add(new Artist { Id = "3", Name = "Seyi Shay", Genre = "R&B", Albums = "2", Counrty = "Nigeria" });
+            list.Add(new Artist { Id = "4", Name = "Sauti Sol", Genre = "Soul", Albums = "3", Counrty = "Kenya" });
+
             return Json(list);
         }
     }

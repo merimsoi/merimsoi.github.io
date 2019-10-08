@@ -1,11 +1,12 @@
 import React from 'react';
 import './App.css';
-import artists from './store';
+import artists from './jsonStore/store';
 
 export default function Artists() {
   return (
     <div>
       <h1>MTV Base Headline Artists 2019</h1>
+      <div> My sourse is json file </div>
       {artists.map(artist => (
         <div id="card-body" key={artist.id}>
           <div className="card">

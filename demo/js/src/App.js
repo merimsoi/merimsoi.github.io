@@ -1,3 +1,4 @@
+/* eslint-disable react/prefer-stateless-function */
 import React, { Component } from 'react';
 import { hot } from 'react-hot-loader';
 import MainContainer from './MainContainer';
@@ -7,7 +8,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1> Hello, World! </h1>
+        <h1> Hello, Lazy React Loading! </h1>
         <MainContainer />
       </div>
     );
