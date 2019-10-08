@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { withCache } from './cache/withCache';
-import { cacheFetche } from './cache/cacheProvider';
+import { withCache } from '../cache/withCache';
+import { cacheFetche } from '../cache/cacheProvider';
 
 const CacheComponent = withCache(props => {
   const artists = cacheFetche(props.cache);

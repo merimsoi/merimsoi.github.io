@@ -1,6 +1,6 @@
 import React from 'react';
-import './App.css';
-import artists from './jsonStore/store';
+import '../App.css';
+import artists from '../jsonStore/store';
 
 export default function Artists() {
   return (
