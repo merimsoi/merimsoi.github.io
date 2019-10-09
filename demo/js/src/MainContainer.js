@@ -1,3 +1,5 @@
+// https://github.com/facebook/react/issues/15201
+// https://reactjs.org/blog/2018/11/27/react-16-roadmap.html#react-16x-mid-2019-the-one-with-suspense-for-data-fetching
 import React, { Suspense } from 'react';
 import Loader from './Loader';
 import ErrorBoundary from './ErrorBoundary';
