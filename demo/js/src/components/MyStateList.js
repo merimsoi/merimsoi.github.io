@@ -1,10 +1,29 @@
+/* eslint-disable prefer-promise-reject-errors */
+/* eslint-disable func-names */
 import React from 'react';
 import fetch from 'isomorphic-fetch';
 
-async function request() {
-  const response = await fetch('http://localhost:5000/api/getSuccessResponse');
-  const json = await response.json();
-  return json;
+// async function request() {
+//   const response = await fetch('http://localhost:5000/api/getSuccessResponse');
+//   const json = await response.json();
+//   return json;
+// }
+
+function request() {
+  return new Promise(function(resolve, reject) {
+    fetch('http://localhost:5000/api/getSuccessResponse')
+      .then(function(response) {
+        if (response.status !== 200) {
+          reject('Error');
+        }
+        response.json().then(function(data) {
+          resolve(data);
+        });
+      })
+      .catch(function(err) {
+        reject(err);
+      });
+  });
 }
 
 class MyStateList extends React.Component {
@@ -16,9 +35,12 @@ class MyStateList extends React.Component {
   }
 
   async componentDidMount() {
-    console.log('MyStateList componentDidMount');
-    const myListResponse = await request();
-    this.setState({ artists: myListResponse });
+    request().then(data => {
+      this.setState({ artists: data });
+    });
+
+    // const myListResponse = await request();
+    // this.setState({ artists: myListResponse });
   }
 
   render() {
