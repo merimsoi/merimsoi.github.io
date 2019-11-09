@@ -5,8 +5,8 @@ import Loader from './Loader';
 import ErrorBoundary from './ErrorBoundary';
 // import asyncComponent from './components/AsyncComponent';
 
-const Artists = React.lazy(() => import('./components/Artists'));
-// const MyStateList = React.lazy(() => import('./components/MyStateList'));
+// const Artists = React.lazy(() => import('./components/Artists'));
+const MyStateList = React.lazy(() => import('./components/MyStateList'));
 // const ReduxComponent = React.lazy(() => import('./components/ReduxComponent'));
 // const CacheComponent = React.lazy(() => import('./components/CacheComponent'));
 // const FailingComponent = React.lazy(() => import('./components/MyFailList'));
@@ -15,17 +15,17 @@ const Artists = React.lazy(() => import('./components/Artists'));
 export default function MainContainer() {
   return (
     <div>
-      <ErrorBoundary>
+      {/* <ErrorBoundary>
         <Suspense fallback={<Loader />}>
           <Artists />
         </Suspense>
-      </ErrorBoundary>
+      </ErrorBoundary> */}
 
-      {/* <ErrorBoundary>
+      <ErrorBoundary>
         <Suspense fallback={<Loader />}>
           <MyStateList />
         </Suspense>
-      </ErrorBoundary> */}
+      </ErrorBoundary>
 
       {/* <ErrorBoundary>
         <Suspense fallback={<Loader />}>
