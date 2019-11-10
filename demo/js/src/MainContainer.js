@@ -15,8 +15,6 @@ import FancyButton from './FancyButton';
 
 export default function MainContainer() {
   const ref = React.createRef();
-  console.log(ref);
-  console.log(ref.current);
   const handleClick = () =>
     ref.current.scrollIntoView({
       behavior: 'smooth',
