@@ -5,46 +5,54 @@ import Loader from './Loader';
 import ErrorBoundary from './ErrorBoundary';
 // import asyncComponent from './components/AsyncComponent';
 
-// const Artists = React.lazy(() => import('./components/Artists'));
-const MyStateList = React.lazy(() => import('./components/MyStateList'));
+const Artists = React.lazy(() => import('./components/Artists'));
+// const MyStateList = React.lazy(() => import('./components/MyStateList'));
 // const ReduxComponent = React.lazy(() => import('./components/ReduxComponent'));
 // const CacheComponent = React.lazy(() => import('./components/CacheComponent'));
 // const FailingComponent = React.lazy(() => import('./components/MyFailList'));
 // const MyAsyncStateList = asyncComponent(() => import('./components/MyStateList'));
+import FancyButton from './FancyButton';
 
 export default function MainContainer() {
+  const ref = React.createRef();
+  console.log(ref);
+  console.log(ref.current);
+  const handleClick = () =>
+    ref.current.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
   return (
     <div>
-      {/* <ErrorBoundary>
+      <button type="button" onClick={handleClick}>
+        Scroll
+      </button>
+      <ErrorBoundary>
         <Suspense fallback={<Loader />}>
           <Artists />
         </Suspense>
-      </ErrorBoundary> */}
-
-      <ErrorBoundary>
+      </ErrorBoundary>
+      <FancyButton ref={ref}>Click me!</FancyButton>
+      {/* <ErrorBoundary>
         <Suspense fallback={<Loader />}>
           <MyStateList />
         </Suspense>
-      </ErrorBoundary>
-
+      </ErrorBoundary> */}
       {/* <ErrorBoundary>
         <Suspense fallback={<Loader />}>
           <ReduxComponent />
         </Suspense>
       </ErrorBoundary> */}
-
       {/* <ErrorBoundary>
         <Suspense fallback={<Loader />}>
           <CacheComponent />
         </Suspense>
       </ErrorBoundary> */}
-
       {/* <ErrorBoundary>
         <Suspense fallback={<Loader />}>
           <FailingComponent />
         </Suspense>
       </ErrorBoundary> */}
-
       {/* <ErrorBoundary>
         <Suspense fallback={<Loader />}>
           <MyAsyncStateList />
