@@ -1,0 +1,13 @@
+#include </usr/include/string.h>
+#include </usr/include/stdio.h>
+#include </usr/include/stdlib.h>
+void error(void);
+void build1(void);
+void build2(void);
+void build3(void);
+void execute(char*);
+int input_command(void);
+void build_result(char*,int);
+int uncoding_input(char*);
+char *words[20],input[81],input_dup[81],result[30],*a;
+int num_in_row,i,error_flag;
