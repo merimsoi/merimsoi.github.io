@@ -1,0 +1,1657 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\WorldConstructKit.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_TREE_IMAGES         BITMAP  DISCARDABLE     "res\\treeImageList.bmp"
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_WORLD DIALOG DISCARDABLE  0, 0, 309, 209
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_CLOCK_VALUE,48,8,73,14,ES_AUTOHSCROLL
+    LTEXT           "Clock Value",IDC_STATIC,8,11,39,8
+    LTEXT           "millisec",IDC_STATIC,128,12,23,8
+    LTEXT           "Music file count",IDC_STATIC,7,60,50,8
+    EDITTEXT        IDC_MUSIC_FILE_COUNT,68,58,27,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Music script count",IDC_STATIC,7,43,58,8
+    EDITTEXT        IDC_MUSIC_SCRIPT_COUNT,68,40,27,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Character number",IDC_STATIC,7,78,57,8
+    EDITTEXT        IDC_CHARACTER_NUMBER,68,76,27,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Scenes number",IDC_STATIC,7,97,50,8
+    EDITTEXT        IDC_SCENES_NUMBER,68,94,27,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Sky number",IDC_STATIC,7,115,38,8
+    EDITTEXT        IDC_SKY_NUMBER,68,112,27,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Inventory count",IDC_STATIC,7,134,50,8
+    EDITTEXT        IDC_INVENTORY_SIZE,68,130,27,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Camera count",IDC_STATIC,7,152,45,8
+    EDITTEXT        IDC_CAMERA_COUNT,68,148,27,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    GROUPBOX        "Track record setting",IDC_STATIC,186,51,80,57
+    LTEXT           "Track records list",IDC_STATIC,115,43,55,8
+    LISTBOX         IDC_LIST_TRACK_RECORD,115,54,55,133,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Powered clock",IDC_IS_CLOCK_POWERED,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,8,26,63,10
+    PUSHBUTTON      "Add",IDC_ADD,186,112,37,14
+    PUSHBUTTON      "Edit",IDC_EDIT,186,127,37,14
+    PUSHBUTTON      "Delete",IDC_DELETE,186,142,37,14
+    LTEXT           "ID",IDC_STATIC,194,70,8,8
+    EDITTEXT        IDC_TRACK_ID,221,67,30,14,ES_AUTOHSCROLL
+    LTEXT           "Value",IDC_STATIC,195,88,19,8
+    EDITTEXT        IDC_TRACK_VALUE,221,86,30,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Up",IDC_UP,186,157,37,14
+    PUSHBUTTON      "Down",IDC_DOWN,186,172,37,14
+END
+
+IDD_MUSIC_SCRIPT DIALOG DISCARDABLE  0, 0, 268, 187
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_LOOP_START,58,24,38,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LOOP_END,58,40,38,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CURRENT_COMMAND,58,56,38,14,ES_AUTOHSCROLL
+    LISTBOX         IDC_LIST_SAMPLE_ID,146,8,68,82,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Add",IDC_ADD_MUSIC,220,11,34,14
+    PUSHBUTTON      "Edit",IDC_EDIT_MUSIC,220,26,34,14
+    PUSHBUTTON      "Delete",IDC_DELETE_MUSIC,220,41,34,14
+    COMBOBOX        IDC_COMBO_SAMPLE_ID,61,109,39,77,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_REPEAT_COMMAND,61,124,39,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_COMMAND_START_TIME,61,141,39,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_COMMAND_END_TIME,61,158,39,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_COMMAND_ARR,180,109,75,80,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Wait for command finish",IDC_IS_WAIT_COMMAND_FINISH,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,125,127,91,10
+    CONTROL         "Obey command",IDC_IS_OBEY_COMMAND,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,125,146,65,10
+    LTEXT           "Script ID",IDC_STATIC,7,12,28,8
+    EDITTEXT        IDC_SCRIPT_ID,58,8,38,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Start from",IDC_STATIC,7,29,31,8
+    LTEXT           "End with",IDC_STATIC,7,45,28,8
+    LTEXT           "Current music",IDC_STATIC,7,62,44,8
+    LTEXT           "Playback action",IDC_STATIC,125,111,52,8
+    LTEXT           "Music list",IDC_STATIC,112,12,30,8
+    LTEXT           "Repeat count",IDC_STATIC,13,127,44,8
+    LTEXT           "Start time",IDC_STATIC,13,146,30,8
+    LTEXT           "End time",IDC_STATIC,13,162,28,8
+    GROUPBOX        "Music setting",IDC_STATIC,7,96,254,84
+    CONTROL         "Spin1",IDC_SPIN_LOOP_START,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,89,25,10,14
+    CONTROL         "Spin2",IDC_SPIN_LOOP_END,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,89,40,10,14
+    CONTROL         "Spin3",IDC_SPIN_CURRENT_MUSIC,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,89,56,10,14
+    CONTROL         "Spin4",IDC_SPIN_REPEAT_COMMAND,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,92,124,11,14
+    LTEXT           "Sample ID",IDC_STATIC,13,111,34,8
+    PUSHBUTTON      "Up",IDC_UP,220,56,34,14
+    PUSHBUTTON      "Down",IDC_DOWN,220,71,34,14
+END
+
+IDD_MUSIC_SAMPLE DIALOG DISCARDABLE  0, 0, 259, 172
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_START_SAMPLE,35,58,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_END_SAMPLE,35,75,40,14,ES_AUTOHSCROLL
+    LTEXT           "Sample ID",IDC_STATIC,7,10,34,8
+    EDITTEXT        IDC_SAMPLE_ID,44,8,40,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "File name",IDC_STATIC,7,28,31,8
+    EDITTEXT        IDC_MUSIC_SAMPLE_FILE_NAME,44,25,114,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Start",IDC_STATIC,15,60,16,8
+    LTEXT           "End",IDC_STATIC,15,78,14,8
+    GROUPBOX        "Time offset",IDC_STATIC,7,44,105,51
+    LTEXT           "milisec",IDC_STATIC,77,62,22,8
+    LTEXT           "milisec",IDC_STATIC,77,77,22,8
+END
+
+IDD_SCENE_DEFINITION DIALOG DISCARDABLE  0, 0, 263, 220
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_FILESET_ID,58,25,48,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_MUSIC_SCRIPT,58,43,48,60,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_ENTRANCE_SCRIPT,58,75,35,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ACTIVE_TEXT,58,111,35,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_SKY_ID,58,59,48,68,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EXIT_SCRIPT,58,93,35,14,ES_AUTOHSCROLL
+    CONTROL         "Navigable scene",IDC_IS_SCENE_NAVIGABLE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,131,69,10
+    CONTROL         "Display inventory",IDC_IS_DISPLAY_INVENTORY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,156,65,10
+    EDITTEXT        IDC_INVENTORY_LEFT,43,168,39,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_INVENTORY_TOP,43,185,39,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_INVENTORY_WIDTH,114,168,39,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_INVENTORY_HEIGHT,114,185,39,14,ES_AUTOHSCROLL
+    LTEXT           "Scene ID",IDC_STATIC,7,9,31,8
+    EDITTEXT        IDC_SCENE_ID,58,7,48,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Fileset ID",IDC_STATIC,7,26,30,8
+    LTEXT           "Music script",IDC_STATIC,7,45,38,8
+    LTEXT           "Entrance script",IDC_STATIC,7,80,48,8
+    LTEXT           "Exit script",IDC_STATIC,7,99,31,8
+    LTEXT           "Sky ID",IDC_STATIC,7,61,22,8
+    LTEXT           "X-value",IDC_STATIC,13,172,25,8
+    LTEXT           "Y-value",IDC_STATIC,13,188,25,8
+    LTEXT           "Width",IDC_STATIC,84,172,20,8
+    LTEXT           "Height",IDC_STATIC,84,188,22,8
+    LTEXT           "Active text",IDC_STATIC,7,116,34,8
+    GROUPBOX        "Inventory",IDC_STATIC,7,144,152,67
+    CONTROL         "Spin1",IDC_SPIN_X_VALUE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,69,167,10,14
+    CONTROL         "Spin2",IDC_SPIN_Y_VALUE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,67,185,10,14
+    CONTROL         "Spin3",IDC_SPIN_WIDTH,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_ARROWKEYS | UDS_NOTHOUSANDS,143,167,
+                    10,14
+    CONTROL         "Spin4",IDC_SPIN_HEIGHT,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,143,186,10,14
+END
+
+IDD_SKY_DEFINITION DIALOG DISCARDABLE  0, 0, 275, 201
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_SKY_WIDTH,48,153,35,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SKY_HEIGHT,48,170,35,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SKY_LEFT,135,153,35,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SKY_TOP,135,170,35,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FRAME_COUNT,61,47,36,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_FRAME_CLOCK_INTERVAL,61,64,87,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CURRENT_FRAME,56,96,36,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_STARTING_TIME,56,114,40,14,ES_AUTOHSCROLL
+    LTEXT           "Sky ID",IDC_STATIC,9,11,22,8
+    EDITTEXT        IDC_SKY_ID,41,9,40,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "File name",IDC_STATIC,9,30,31,8
+    EDITTEXT        IDC_SKY_FILE_NAME,41,27,107,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Width",IDC_STATIC,18,155,20,8
+    LTEXT           "Height",IDC_STATIC,18,172,22,8
+    LTEXT           "X-offset",IDC_STATIC,105,155,25,8
+    LTEXT           "Y-offset",IDC_STATIC,105,172,25,8
+    LTEXT           "Frame count",IDC_STATIC,9,51,40,8
+    LTEXT           "Starting time",IDC_STATIC,14,117,40,8
+    LTEXT           "Frames interval",IDC_STATIC,9,68,48,8
+    GROUPBOX        "Sky animation",IDC_STATIC,8,140,206,52
+    CONTROL         "Spin1",IDC_SPIN_SKY_WIDTH,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,77,154,10,14
+    CONTROL         "Spin2",IDC_SPIN_SKY_HEIGHT,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,77,170,10,14
+    CONTROL         "Spin3",IDC_SPIN_SKY_LEFT,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,164,154,10,14
+    CONTROL         "Spin4",IDC_SPIN_SKY_TOP,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,164,170,10,14
+    GROUPBOX        "Current frame",IDC_STATIC,8,83,103,53
+    LTEXT           "Index",IDC_STATIC,14,101,18,8
+    CONTROL         "Spin5",IDC_SPIN_FRAME_COUNT,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,91,47,10,14
+    CONTROL         "Spin6",IDC_SPIN_CURRENT_FRAME,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,86,96,10,14
+END
+
+IDD_ITEM_DEFINITION DIALOG DISCARDABLE  0, 0, 322, 212
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_HOVER_SCRIPT,61,43,111,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FEEDBACK_STRING,61,59,111,14,ES_AUTOHSCROLL
+    LISTBOX         IDC_LIST_INTERACTION,184,25,78,65,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Add",IDC_ADD,266,17,30,14
+    PUSHBUTTON      "Edit",IDC_EDIT,266,32,30,14
+    PUSHBUTTON      "Delete",IDC_DELETE,266,47,30,14
+    EDITTEXT        IDC_FILESET_ID,62,106,40,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_INTERATION_TYPE,62,124,74,92,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_INTERACTION_SUB_TYPE,62,140,74,72,
+                    CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_TRIGGER_SCRIPT,62,156,74,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DESCRIPTION,62,174,214,14,ES_AUTOHSCROLL
+    CONTROL         "Interaction enabled",IDC_IS_INTERACTION_ENABLED,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,17,194,77,10
+    CONTROL         "Stashed item",IDC_IS_STASHED_ITEM,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,79,57,10
+    LTEXT           "Item ID",IDC_STATIC,7,11,24,8
+    EDITTEXT        IDC_ITEM_ID,61,8,40,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "File name",IDC_STATIC,7,28,31,8
+    EDITTEXT        IDC_FILE_NAME,61,25,88,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Hover script",IDC_STATIC,7,45,39,8
+    LTEXT           "Feedback string",IDC_STATIC,7,62,52,8
+    LTEXT           "Type",IDC_STATIC,17,128,17,8
+    LTEXT           "Sub type",IDC_STATIC,17,145,29,8
+    LTEXT           "Description",IDC_STATIC,17,178,36,8
+    LTEXT           "Trigger script",IDC_STATIC,17,161,42,8
+    LTEXT           "FilesetID",IDC_STATIC,17,110,28,8
+    GROUPBOX        "Interaction setting",IDC_STATIC,7,95,281,113
+    LTEXT           "Interaction list",IDC_STATIC,184,11,44,8
+    PUSHBUTTON      "Up",IDC_UP,266,62,30,14
+    PUSHBUTTON      "Down",IDC_DOWN,266,77,30,14
+END
+
+IDD_CAMERA_DEFINITION DIALOG DISCARDABLE  0, 0, 281, 227
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_COMBO_LAYER,31,25,103,52,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Enable camera",IDC_IS_CAMERA_ENABLED,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,44,63,10
+    CONTROL         "Initialize scene",IDC_IS_SCENE_INITIALIZED,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,63,62,10
+    CONTROL         "Update output image",IDC_IS_FROZEN_CAMERA,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,82,82,10
+    CONTROL         "Apply color filter",IDC_IS_APPLY_COLOR_FILTER,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,101,65,10
+    EDITTEXT        IDC_COLOR_H_START,73,132,41,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_COLOR_L_START,73,149,41,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_COLOR_S_START,73,166,41,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_START_CLOCK_VALUE,73,182,32,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TRANSPARENT_START,206,74,36,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TRANSPARENCY_END,206,90,36,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_COLOR_H_END,207,132,38,14,ES_AUTOHSCROLL
+    CONTROL         "Spin2",IDC_SPIN_COLOR_L_END,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,233,149,11,14
+    EDITTEXT        IDC_COLOR_S_END,207,166,38,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_END_CLOCK_VALUE,207,182,32,14,ES_AUTOHSCROLL
+    LTEXT           "Scene ID",IDC_STATIC,7,10,31,8
+    LTEXT           "Layer",IDC_STATIC,7,28,18,8
+    LTEXT           "Time for appliance",IDC_STATIC,13,186,59,8
+    LTEXT           "Hue value",IDC_STATIC,13,135,34,8
+    CONTROL         "Spin1",IDC_SPIN_COLOR_H_START,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,101,132,11,14
+    LTEXT           "Light value",IDC_STATIC,13,152,36,8
+    CONTROL         "Spin2",IDC_SPIN_COLOR_L_START,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,101,149,11,14
+    LTEXT           "Saturation value",IDC_STATIC,13,169,52,8
+    CONTROL         "Spin3",IDC_SPIN_COLOR_S_START,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,101,166,11,14
+    CONTROL         "Apply transparency",IDC_IS_APPLY_TRANSPARENCY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,140,44,76,10
+    LTEXT           "Initial value",IDC_STATIC,148,75,36,8
+    CONTROL         "Spin4",IDC_SPIN_TRANSPARENT_START,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,236,74,11,14
+    LTEXT           "Time for appliance",IDC_STATIC,145,186,59,8
+    LTEXT           "Hue value",IDC_STATIC,148,135,34,8
+    CONTROL         "Spin1",IDC_SPIN_COLOR_H_END,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,233,132,11,14
+    LTEXT           "Light value",IDC_STATIC,148,152,36,8
+    EDITTEXT        IDC_COLOR_L_END,207,149,38,14,ES_AUTOHSCROLL
+    LTEXT           "Saturation value",IDC_STATIC,148,169,52,8
+    CONTROL         "Spin3",IDC_SPIN_COLOR_S_END,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,233,166,11,14
+    LTEXT           "Final value",IDC_STATIC,148,95,35,8
+    CONTROL         "Spin5",IDC_SPIN_TRANSPARENCY_END,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,236,90,11,14
+    GROUPBOX        "Initial colors",IDC_STATIC,7,119,125,86
+    GROUPBOX        "Final colors",IDC_STATIC,140,119,124,86
+    GROUPBOX        "Transparency filter",IDC_STATIC,140,60,124,51
+    LTEXT           "milisec",IDC_STATIC,107,185,22,8
+    LTEXT           "milisec",IDC_STATIC,240,185,22,8
+    COMBOBOX        IDC_COMBO_SCENE_ID,41,8,48,60,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_STAGING_INFO DIALOG DISCARDABLE  0, 0, 330, 250
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_ALPHA_FILE_NAME,65,21,111,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BROWSE_ALPHA_FILE,180,21,12,14
+    EDITTEXT        IDC_MAP_FILE_NAME,65,36,111,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BROWSE_MAP_FILE,180,36,12,14
+    EDITTEXT        IDC_LIGHTING_FILE_NAME,65,51,111,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BROWSE_LIGHT_FILE,180,51,12,14
+    EDITTEXT        IDC_CAMERA_ANGLE,65,68,36,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CAMERA_HEIGHT,65,83,36,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_LIGHTING_MODE,65,98,54,57,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_LEFT_ALPHA,159,78,35,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TOP_ALPHA,159,94,35,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_WIDTH_START,40,127,39,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HEIGHT_START,40,142,39,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LEFT_START,109,127,39,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TOP_START,109,142,39,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_START_CLOCK_VALUE1,40,158,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_WIDTH_END,199,126,34,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HEIGHT_END,199,141,34,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LEFT_END,266,126,34,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TOP_END,266,141,34,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_END_CLOCK_VALUE,199,158,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MAP_WIDTH,40,193,38,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MAP_HEIGHT,40,209,38,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_COLOR_COUNT,53,225,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MAP_LEFT,110,193,38,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MAP_TOP,110,209,38,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LIGHT_R,212,193,36,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LIGHT_B,212,209,36,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LIGHT_G,212,225,36,14,ES_AUTOHSCROLL
+    LISTBOX         IDC_LIST_MAP_ALTITUDE_INDEX,201,16,116,47,
+                    LBS_NOINTEGRALHEIGHT | LBS_MULTICOLUMN | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Edit",IDC_EDIT,280,94,27,14
+    EDITTEXT        IDC_IMAGE_FILE_NAME,65,6,111,14,ES_AUTOHSCROLL
+    LTEXT           "Width",IDC_STATIC,11,130,20,8
+    LTEXT           "Height",IDC_STATIC,11,146,22,8
+    LTEXT           "X-value",IDC_STATIC,82,130,25,8
+    LTEXT           "Y-value",IDC_STATIC,82,146,25,8
+    LTEXT           "Time",IDC_STATIC,11,163,16,8
+    LTEXT           "Width",IDC_STATIC,171,130,20,8
+    LTEXT           "Height",IDC_STATIC,171,146,22,8
+    LTEXT           "X-value",IDC_STATIC,238,130,25,8
+    LTEXT           "Y-value",IDC_STATIC,238,146,25,8
+    LTEXT           "Time",IDC_STATIC,171,163,16,8
+    LTEXT           "Alpha file name",IDC_STATIC,7,25,49,8
+    LTEXT           "X-value",IDC_STATIC,133,81,25,8
+    LTEXT           "Y-value",IDC_STATIC,133,96,25,8
+    LTEXT           "Map file name",IDC_STATIC,7,41,45,8
+    LTEXT           "Color count",IDC_STATIC,13,229,37,8
+    LTEXT           "Map altitude list",IDC_STATIC,201,7,50,8
+    LTEXT           "Width",IDC_STATIC,14,195,20,8
+    LTEXT           "Height",IDC_STATIC,14,211,22,8
+    LTEXT           "X-value",IDC_STATIC,82,195,25,8
+    LTEXT           "Y-value",IDC_STATIC,82,211,25,8
+    LTEXT           "Lighting Mode",IDC_STATIC,7,103,46,8
+    LTEXT           "Lighting file name",IDC_STATIC,7,56,56,8
+    LTEXT           "Red value",IDC_STATIC,172,195,34,8
+    LTEXT           "Blue value",IDC_STATIC,172,211,34,8
+    LTEXT           "Green value",IDC_STATIC,172,226,40,8
+    LTEXT           "Camera height",IDC_STATIC,7,87,46,8
+    GROUPBOX        "Background image initial offset",IDC_STATIC,7,115,148,
+                    63
+    GROUPBOX        "Background image final offset",IDC_STATIC,166,115,140,
+                    63
+    GROUPBOX        "Alpha map offset",IDC_STATIC,127,66,70,48
+    GROUPBOX        "Map image setting",IDC_STATIC,7,181,148,63
+    LTEXT           "Image file name",IDC_STATIC,7,8,50,8
+    GROUPBOX        "Light map",IDC_STATIC,166,181,87,63
+    LTEXT           "Camera angle",IDC_STATIC,7,72,44,8
+    PUSHBUTTON      "...",IDC_BROWSE_IMAGE_FILE_NAME,180,6,12,14
+    CONTROL         "Spin1",IDC_SPIN_RED,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_ARROWKEYS | UDS_NOTHOUSANDS | 
+                    UDS_HOTTRACK,236,193,10,14
+    CONTROL         "Spin2",IDC_SPIN_BLUE,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_ARROWKEYS | UDS_NOTHOUSANDS,235,210,
+                    10,14
+    CONTROL         "Spin3",IDC_SPIN_GREEN,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_ARROWKEYS | UDS_NOTHOUSANDS,236,225,
+                    10,14
+    GROUPBOX        "Map altitude settings",IDC_STATIC,201,66,112,48
+    LTEXT           "Index",IDC_STATIC,208,81,18,8
+    LTEXT           "Height",IDC_STATIC,208,96,22,8
+    EDITTEXT        IDC_INDEX,236,78,37,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_HEIGHT,236,94,37,14,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_MAP_HEIGHT,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,263,95,10,14
+    CONTROL         "Spin2",IDC_SPIN_BACK_INIT_WIDTH,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,67,127,10,14
+    CONTROL         "Spin3",IDC_SPIN_BACK_INIT_HEIGHT,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,67,143,10,14
+    CONTROL         "Spin4",IDC_SPIN_BACK_INIT_X,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,137,127,10,14
+    CONTROL         "Spin5",IDC_SPIN_BACK_INIT_Y,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,137,143,11,14
+    CONTROL         "Spin6",IDC_SPIN_BACK_FINISH_WIDTH,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,229,126,10,14
+    CONTROL         "Spin7",IDC_SPIN_BACK_FINISH_HEIGHT,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,229,140,11,14
+    CONTROL         "Spin8",IDC_SPIN_BACK_FINISH_X,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,295,127,10,14
+    CONTROL         "Spin9",IDC_SPIN_BACK_FINISH_Y,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,297,143,10,14
+    CONTROL         "Spin10",IDC_SPIN_IMAGE_WIDTH,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,71,194,10,14
+    CONTROL         "Spin11",IDC_SPIN_IMAGE_HEIGHT,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,73,210,10,14
+    CONTROL         "Spin12",IDC_SPIN_IMAGE_X,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,145,194,10,14
+    CONTROL         "Spin13",IDC_SPIN_IMAGE_Y,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,145,209,10,14
+    CONTROL         "Spin14",IDC_SPIN_MAP_OFFSET_X,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,185,76,10,14
+    CONTROL         "Spin15",IDC_SPIN_MAP_OFFSET_Y,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,185,93,11,14
+    CONTROL         "Spin16",IDC_SPIN_CAMERA_ANGLE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,101,68,10,14
+    CONTROL         "Spin17",IDC_SPIN_CAMERA_HEIGHT,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,101,83,10,14
+    EDITTEXT        IDC_LIGHT_ANGLE_X,289,193,31,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LIGHT_ANGLE_Y,289,209,31,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LIGHT_ANGLE_Z,289,225,31,14,ES_AUTOHSCROLL
+    LTEXT           "X-value",IDC_STATIC,259,194,25,8
+    LTEXT           "Y-value",IDC_STATIC,259,210,25,8
+    LTEXT           "Z-value",IDC_STATIC,259,225,25,8
+    GROUPBOX        "Light angle",IDC_STATIC,254,180,70,63
+END
+
+IDD_IMAGE_INFO DIALOG DISCARDABLE  0, 0, 307, 244
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_ALPHA_FILE_NAME,57,39,88,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BROWSE_ALPHA_FILE_NAME,150,39,15,14
+    EDITTEXT        IDC_LOOP_REMAINING,75,56,27,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_WIDTH_START,41,87,38,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HEIGHT_START,41,103,38,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LEFT_START,41,119,38,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TOP_START,41,135,38,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Z_START,41,151,38,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_START_CLOCK_VALUE,42,168,27,14,ES_AUTOHSCROLL
+    CONTROL         "Spin6",IDC_SPIN_FINISH_WIDTH,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,163,87,10,14
+    EDITTEXT        IDC_HEIGHT_END,133,103,39,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LEFT_END,133,119,39,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TOP_END,133,135,39,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Z_END,133,151,39,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_END_CLOCK_VALUE,133,168,27,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FRAME_COUNT,223,86,27,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FRAME_INTERVAL,223,103,27,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CURRENT_FRAME,223,121,27,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CURRENT_FRAME_CLOCK_VALUE,252,137,27,14,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_LEFT_ALPHA,44,200,35,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TOP_ALPHA,44,216,35,14,ES_AUTOHSCROLL
+    CONTROL         "Visible image",IDC_IS_IMAGE_VISIBLE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,93,202,57,10
+    EDITTEXT        IDC_IMAGE_ID,57,6,40,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_WIDTH_END,133,87,39,14,ES_AUTOHSCROLL
+    LTEXT           "Image ID",IDC_STATIC,7,8,30,8
+    LTEXT           "File name",IDC_STATIC,7,26,31,8
+    EDITTEXT        IDC_FILE_NAME,57,23,88,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Width",IDC_STATIC,10,91,20,8
+    LTEXT           "Height",IDC_STATIC,10,107,22,8
+    LTEXT           "X-offset",IDC_STATIC,10,123,25,8
+    LTEXT           "Y-offset",IDC_STATIC,10,138,25,8
+    LTEXT           "Distance",IDC_STATIC,10,154,29,8
+    LTEXT           "Time",IDC_STATIC,10,170,16,8
+    LTEXT           "Width",IDC_STATIC,103,91,20,8
+    LTEXT           "Height",IDC_STATIC,103,107,22,8
+    LTEXT           "X-offset",IDC_STATIC,103,123,25,8
+    LTEXT           "Y-offset",IDC_STATIC,103,138,25,8
+    LTEXT           "Distance",IDC_STATIC,103,154,29,8
+    LTEXT           "Time",IDC_STATIC,103,170,16,8
+    LTEXT           "Count",IDC_STATIC,191,91,20,8
+    LTEXT           "Current",IDC_STATIC,192,123,24,8
+    LTEXT           "Current frame time",IDC_STATIC,191,140,58,8
+    LTEXT           "Interval",IDC_STATIC,192,107,24,8
+    LTEXT           "Remaining cycle time",IDC_STATIC,5,60,68,8
+    LTEXT           "Alpha file name",IDC_STATIC,5,42,49,8
+    GROUPBOX        "Initial image setting",IDC_STATIC,5,75,81,112
+    GROUPBOX        "Final image setting",IDC_STATIC,96,75,81,112
+    GROUPBOX        "Frame",IDC_STATIC,186,75,103,83
+    LTEXT           "X-value",IDC_STATIC,12,204,25,8
+    LTEXT           "Y-value",IDC_STATIC,12,220,25,8
+    GROUPBOX        "Alpha map offset",IDC_STATIC,5,190,81,48
+    CONTROL         "Spin1",IDC_SPIN_INIT_WIDTH,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,71,87,10,14
+    CONTROL         "Spin2",IDC_SPIN_INIT_HEIGHT,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,75,103,10,14
+    CONTROL         "Spin3",IDC_SPIN_INIT_X,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,73,119,10,14
+    CONTROL         "Spin4",IDC_SPIN_INIT_Y,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,75,135,10,14
+    CONTROL         "Spin5",IDC_SPIN_INIT_DIST,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,75,151,10,14
+    CONTROL         "Spin7",IDC_SPIN_FINISH_HEIGHT,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,165,103,10,14
+    CONTROL         "Spin8",IDC_SPIN_FINISH_X,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,167,118,10,14
+    CONTROL         "Spin9",IDC_SPIN_FINISH_Y,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,167,135,10,14
+    CONTROL         "Spin10",IDC_SPIN_FINISH_DIST,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,167,151,10,14
+    CONTROL         "Spin11",IDC_SPIN_MAP_OFFSET_X,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,73,199,10,14
+    CONTROL         "Spin12",IDC_SPIN_MAP_OFFSET_Y,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,74,216,10,14
+END
+
+IDD_ANIMATION_INFO DIALOG DISCARDABLE  0, 0, 318, 210
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_FILE_NAME_AUDIO,60,38,113,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BROWSE_AUDIO_FILE_NAME,175,39,14,14
+    EDITTEXT        IDC_START_PLAY_TIME,60,53,43,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LOOP_REMAINING,75,69,27,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LEFT_START,45,103,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TOP_START,45,118,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_WIDTH_START,45,134,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HEIGHT_START,45,150,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Z_START,45,166,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_START_CLOCK_VALUE,45,183,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LEFT_END,150,103,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TOP_END,150,118,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_WIDTH_END,150,134,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HEIGHT_END,150,150,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Z_END,150,166,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_END_CLOCK_VALUE,150,183,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_START_VOLUME_TIME,266,23,29,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_END_VOLUME_TIME,266,39,29,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_VOLUME_START,266,54,29,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_VOLUME_END,266,69,29,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_START_FRAME,271,102,30,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_END_FRAME,271,119,30,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CURRENT_FRAME,271,136,30,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FRAME_EXPIRATION,271,153,30,14,ES_AUTOHSCROLL
+    CONTROL         "Use video",IDC_IS_DO_VIDEO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,217,178,48,10
+    CONTROL         "Use audio",IDC_IS_DO_AUDIO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,217,191,48,10
+    LTEXT           "Animation ID",IDC_STATIC,7,11,41,8
+    EDITTEXT        IDC_ANIMATION_ID,60,8,43,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Video file name",IDC_STATIC,7,27,49,8
+    EDITTEXT        IDC_FILE_NAME_VIDEO,60,23,113,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Audio file name",IDC_STATIC,7,42,49,8
+    LTEXT           "Width",IDC_STATIC,13,137,20,8
+    LTEXT           "Height",IDC_STATIC,13,152,22,8
+    LTEXT           "X-value",IDC_STATIC,13,108,25,8
+    LTEXT           "Y-value",IDC_STATIC,13,123,25,8
+    LTEXT           "Distance",IDC_STATIC,13,169,29,8
+    LTEXT           "Time",IDC_STATIC,13,186,16,8
+    LTEXT           "Width",IDC_STATIC,119,137,20,8
+    LTEXT           "Height",IDC_STATIC,119,152,22,8
+    LTEXT           "X-value",IDC_STATIC,119,108,25,8
+    LTEXT           "Y-value",IDC_STATIC,119,123,25,8
+    LTEXT           "Distance",IDC_STATIC,119,169,29,8
+    LTEXT           "Time",IDC_STATIC,119,186,16,8
+    LTEXT           "Start play time",IDC_STATIC,7,59,45,8
+    LTEXT           "First",IDC_STATIC,225,108,14,8
+    LTEXT           "Current",IDC_STATIC,225,138,24,8
+    LTEXT           "Expiration time",IDC_STATIC,225,155,46,8
+    LTEXT           "Last",IDC_STATIC,225,123,14,8
+    LTEXT           "Remaining cycle time",IDC_STATIC,7,75,68,8
+    LTEXT           "Start time",IDC_STATIC,225,26,30,8
+    LTEXT           "End time",IDC_STATIC,225,43,28,8
+    LTEXT           "Final value",IDC_STATIC,225,74,35,8
+    GROUPBOX        "Video output initial settings",IDC_STATIC,7,92,97,110
+    GROUPBOX        "Video output final settings",IDC_STATIC,112,92,97,110
+    GROUPBOX        "Frame",IDC_STATIC,217,92,94,83
+    GROUPBOX        "Volume",IDC_STATIC,217,10,94,78
+    LTEXT           "Initial value",IDC_STATIC,225,59,36,8
+    CONTROL         "Spin1",IDC_SPIN_INIT_X_VALUE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,83,102,10,14
+    CONTROL         "Spin2",IDC_SPIN_INIT_Y_VALUE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,84,119,11,14
+    CONTROL         "Spin3",IDC_SPIN_INIT_WIDTH,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,83,137,11,14
+    CONTROL         "Spin4",IDC_SPIN_INIT_HEIGHT,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,83,151,11,14
+    CONTROL         "Spin5",IDC_SPIN_INIT_DISTANCE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,85,167,10,14
+    CONTROL         "Spin6",IDC_SPIN_FINAL_X_VALUE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,189,103,10,14
+    CONTROL         "Spin7",IDC_SPIN_FINAL_Y_VALUE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,189,119,11,14
+    CONTROL         "Spin8",IDC_SPIN_FINAL_WIDTH,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,189,135,10,14
+    CONTROL         "Spin9",IDC_SPIN_FINAL_HEIGHT,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,189,151,10,14
+    CONTROL         "Spin10",IDC_SPIN_FINAL_DISTANCE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,189,167,10,14
+END
+
+IDD_CHARACTER_INFO DIALOG DISCARDABLE  0, 0, 281, 248
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Character name",IDC_STATIC,7,26,51,8
+    EDITTEXT        IDC_FILE_NAME,61,24,82,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Character ID",IDC_STATIC,7,10,41,8
+    EDITTEXT        IDC_CHARACTER_ID,62,7,40,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Default clip",IDC_STATIC,149,57,36,8
+    EDITTEXT        IDC_DEFAULT_CLIP,187,53,40,14,ES_AUTOHSCROLL
+    LISTBOX         IDC_CLIP_LIST,7,55,78,60,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Add",IDC_ADD,91,44,30,14
+    PUSHBUTTON      "Edit",IDC_EDIT,91,59,30,14
+    PUSHBUTTON      "Delete",IDC_DELETE,91,74,30,14
+    LTEXT           "Clip list",IDC_STATIC,7,44,22,8
+    GROUPBOX        "Clip setting",IDC_STATIC,7,119,264,124
+    LTEXT           "File name",IDC_STATIC,17,135,31,8
+    EDITTEXT        IDC_CLIP_FILE_NAME,51,133,184,14,ES_AUTOHSCROLL
+    LTEXT           "Color file",IDC_STATIC,17,153,28,8
+    EDITTEXT        IDC_COLOR_FILE,51,150,184,14,ES_AUTOHSCROLL
+    LTEXT           "Vertex file",IDC_STATIC,17,169,32,8
+    EDITTEXT        IDC_VERTEX_FILE,51,166,184,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BROWSE_FILE_NAME,243,133,16,14
+    PUSHBUTTON      "...",IDC_BROWSE_COLOR_FILE,243,150,16,14
+    PUSHBUTTON      "...",IDC_BROWSE_VERTEX_FILE,243,166,16,14
+    LTEXT           "First frame",IDC_STATIC,17,206,33,8
+    EDITTEXT        IDC_FIRST_FRAME,51,203,40,14,ES_AUTOHSCROLL
+    LTEXT           "Last frame",IDC_STATIC,17,223,34,8
+    EDITTEXT        IDC_LAST_FRAME,51,219,40,14,ES_AUTOHSCROLL
+    LTEXT           "Number of frame per second",IDC_STATIC,104,206,90,8
+    EDITTEXT        IDC_NUM_PER_SECOND,196,203,40,14,ES_AUTOHSCROLL
+    LTEXT           "Loop count",IDC_STATIC,104,223,37,8
+    EDITTEXT        IDC_LOOP_COUNT,196,219,40,14,ES_AUTOHSCROLL
+    LTEXT           "Type ID",IDC_STATIC,17,187,26,8
+    EDITTEXT        IDC_TYPE_ID,51,184,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Up",IDC_UP,91,89,30,14
+    PUSHBUTTON      "Down",IDC_DOWN,91,104,30,14
+END
+
+IDD_CHARACTER_CONTEXT DIALOG DISCARDABLE  0, 0, 300, 231
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Character ID",IDC_STATIC,7,13,41,8
+    EDITTEXT        IDC_CHARACTER_ID,53,9,40,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "Character is shown in there current scene",
+                    IDC_IS_CHARACTER_VISIBLE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,32,147,10
+    CONTROL         "Character should be affected by a scene's lighting map",
+                    IDC_IS_CHARACTER_AFFECTED_BY_LIGHT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,48,188,10
+    LTEXT           "Current frame",IDC_STATIC,137,76,43,8
+    LTEXT           "Next frame",IDC_STATIC,137,93,35,8
+    EDITTEXT        IDC_CURRENT_FRAME,228,72,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NEXT_FRAME,228,89,40,14,ES_AUTOHSCROLL
+    LTEXT           "Time of the previous frame",IDC_STATIC,137,110,84,8
+    EDITTEXT        IDC_TIME_OF_THE_PREVIOUS_FRAME,228,106,40,14,
+                    ES_AUTOHSCROLL
+    LTEXT           "Time of the next frame",IDC_STATIC,137,127,71,8
+    EDITTEXT        IDC_TIME_OF_THE_NEXT_FRAME,228,123,40,14,ES_AUTOHSCROLL
+    LISTBOX         IDC_CLIP_LIST,7,74,78,75,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Clip list",IDC_STATIC,7,63,22,8
+    GROUPBOX        "Clip setting",IDC_STATIC,7,155,286,67
+    LTEXT           "Transitions along the X-axis",IDC_STATIC,14,188,87,8
+    EDITTEXT        IDC_TRANS_X,105,185,40,14,ES_AUTOHSCROLL
+    LTEXT           "Transitions along the Y-axis",IDC_STATIC,14,206,87,8
+    EDITTEXT        IDC_TRANS_Y,105,202,40,14,ES_AUTOHSCROLL
+    LTEXT           "Transitions along the Z-axis",IDC_STATIC,153,186,87,8
+    EDITTEXT        IDC_TRANS_Z,243,182,40,14,ES_AUTOHSCROLL
+    LTEXT           "Time for position",IDC_STATIC,153,204,52,8
+    EDITTEXT        IDC_TIME,243,199,40,14,ES_AUTOHSCROLL
+    LTEXT           "Type ID",IDC_STATIC,14,172,26,8
+    COMBOBOX        IDC_TYPE_ID_CMB,44,170,101,73,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Add",IDC_ADD,92,74,30,14
+    PUSHBUTTON      "Edit",IDC_EDIT,92,89,30,14
+    PUSHBUTTON      "Delete",IDC_DELETE,92,104,30,14
+    PUSHBUTTON      "Up",IDC_UP,92,119,30,14
+    PUSHBUTTON      "Down",IDC_DOWN,92,134,30,14
+END
+
+IDD_SFX_INFO DIALOG DISCARDABLE  0, 0, 233, 197
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_START_CLOCK_VALUE,77,47,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LOOP_REMAINING,77,65,40,14,ES_AUTOHSCROLL
+    CONTROL         "Enabled audio",IDC_IS_AUDIO_ENABLED,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,86,61,10
+    EDITTEXT        IDC_VOLUME_START_TIME,60,114,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_VOLUME_END_TIME,60,130,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_VOLUME_START,60,147,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_VOLUME_END,60,164,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_START_POSITION,156,114,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_END_POSTION,157,130,40,14,ES_AUTOHSCROLL
+    LTEXT           "Sound ID",IDC_STATIC,8,11,31,8
+    EDITTEXT        IDC_SFX_ID,43,8,40,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "File name",IDC_STATIC,8,28,31,8
+    EDITTEXT        IDC_FILE_NAME,44,24,102,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Start play time",IDC_STATIC,8,50,45,8
+    LTEXT           "Start",IDC_STATIC,138,116,16,8
+    LTEXT           "End",IDC_STATIC,138,132,14,8
+    LTEXT           "Remaining cycle time",IDC_STATIC,7,68,68,8
+    LTEXT           "Start time",IDC_STATIC,15,116,30,8
+    LTEXT           "End time",IDC_STATIC,15,132,28,8
+    LTEXT           "Initial volume",IDC_STATIC,15,150,42,8
+    CONTROL         "Spin1",IDC_SPIN_VOLUME_START,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,98,147,11,14
+    LTEXT           "Final volume",IDC_STATIC,15,167,40,8
+    CONTROL         "Spin2",IDC_SPIN_VOLUME_END,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,99,164,11,14
+    GROUPBOX        "Time offset",IDC_STATIC,129,100,95,52
+    LTEXT           "milisec",IDC_STATIC,198,116,22,8
+    LTEXT           "milisec",IDC_STATIC,199,133,22,8
+    GROUPBOX        "Volume",IDC_STATIC,7,100,114,88
+END
+
+IDD_TEXT_DISPLAY DIALOG DISCARDABLE  0, 0, 319, 246
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_FONT_NAME,51,23,79,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_TEXT_TYPE,51,39,79,82,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_DISPLAY_STRING,51,54,259,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_START_CLOCK_VALUE,39,110,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FONT_SIZE_START,39,125,31,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_COLOR_R_START,135,105,29,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_COLOR_G_START,135,121,29,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_COLOR_B_START,135,137,29,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LEFT_REGION_START,207,107,31,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TOP_REGION_START,207,123,31,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_WIDTH_REGION_START,266,107,31,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HEIGHT_REGION_START,266,123,31,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_END_CLOCK_VALUE,39,186,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FONT_SIZE_END,39,203,39,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_COLOR_R_END,135,183,29,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_COLOR_G_END,135,199,29,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_COLOR_B_END,135,215,29,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LEFT_REGION_END,207,186,31,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TOP_REGION_END,207,203,31,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_WIDTH_REGION_END,266,186,31,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HEIGHT_REGION_END,266,203,31,14,ES_AUTOHSCROLL
+    CONTROL         "Show text",IDC_IS_SHOW_TEXT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,73,47,10
+    CONTROL         "Spin8",IDC_SPIN_FONT_SIZE_START,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,59,125,
+                    10,14
+    CONTROL         "Spin1",IDC_SPIN_COLOR_B_START,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,155,137,11,14
+    CONTROL         "Spin4",IDC_SPIN_LEFT_REGION_START,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,229,107,10,14
+    CONTROL         "Spin5",IDC_SPIN_TOP_REGION_START,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,229,124,10,14
+    CONTROL         "Spin9",IDC_SPIN_FONT_SIZE_END,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,62,203,11,14
+    LTEXT           "Text ID",IDC_STATIC,8,11,24,8
+    EDITTEXT        IDC_TEXT_ID,51,7,40,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Font name",IDC_STATIC,8,27,34,8
+    LTEXT           "Text type",IDC_STATIC,8,42,30,8
+    LTEXT           "Display string",IDC_STATIC,7,58,42,8
+    LTEXT           "Time",IDC_STATIC,10,111,16,8
+    LTEXT           "Red value",IDC_STATIC,92,107,34,8
+    LTEXT           "Green value",IDC_STATIC,92,123,40,8
+    LTEXT           "Blue value",IDC_STATIC,92,140,34,8
+    LTEXT           "Font size",IDC_STATIC,10,127,29,8
+    LTEXT           "Time",IDC_STATIC,10,190,16,8
+    LTEXT           "X-value",IDC_STATIC,181,108,25,8
+    LTEXT           "Y-value",IDC_STATIC,181,126,25,8
+    LTEXT           "Width",IDC_STATIC,244,109,20,8
+    LTEXT           "Height ",IDC_STATIC,244,125,21,8
+    LTEXT           "Red value",IDC_STATIC,92,186,34,8
+    LTEXT           "Green value",IDC_STATIC,92,202,40,8
+    LTEXT           "Blue value",IDC_STATIC,92,216,34,8
+    LTEXT           "Font size",IDC_STATIC,10,206,29,8
+    LTEXT           "X-value",IDC_STATIC,181,189,25,8
+    LTEXT           "Y-value",IDC_STATIC,181,206,25,8
+    LTEXT           "Width",IDC_STATIC,244,189,20,8
+    LTEXT           "Height",IDC_STATIC,244,206,21,8
+    GROUPBOX        "Text color",IDC_STATIC,87,95,84,61
+    CONTROL         "Spin2",IDC_SPIN_COLOR_G_START,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,155,121,11,14
+    CONTROL         "Spin3",IDC_SPIN_COLOR_R_START,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,155,105,10,14
+    GROUPBOX        "Text region",IDC_STATIC,176,95,129,61
+    CONTROL         "Spin6",IDC_SPIN_WIDTH_REGION_START,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,287,108,11,14
+    CONTROL         "Spin7",IDC_SPIN_HEIGHT_REGION_START,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,287,123,11,14
+    GROUPBOX        "Text color",IDC_STATIC,87,173,85,61
+    CONTROL         "Spin1",IDC_SPIN_COLOR_B_END,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,155,215,11,14
+    CONTROL         "Spin2",IDC_SPIN_COLOR_G_END,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,155,199,11,14
+    CONTROL         "Spin3",IDC_SPIN_COLOR_R_END,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,155,183,11,14
+    GROUPBOX        "Text region",IDC_STATIC,176,173,129,61
+    CONTROL         "Spin10",IDC_SPIN_LEFT_REGION_END,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,229,186,10,14
+    CONTROL         "Spin11",IDC_SPIN_TOP_REGION_END,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,229,203,10,14
+    CONTROL         "Spin12",IDC_SPIN_WIDTH_REGION_END,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,287,186,10,14
+    CONTROL         "Spin13",IDC_SPIN_HEIGHT_REGION_END,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,287,203,10,14
+    GROUPBOX        "Initial settings",IDC_STATIC,6,87,307,76
+    GROUPBOX        "Final settings",IDC_STATIC,6,166,307,76
+END
+
+IDD_HOT_SPOT_INFO DIALOG DISCARDABLE  0, 0, 319, 248
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_COMBO_HOT_SPOT_MODE,56,25,52,57,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_IMAGE_ID,56,41,52,67,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_ANIMATION_ID,56,57,52,57,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_CHARACTER_ID,56,73,52,56,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_HOVER_SCRIPT,177,25,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_UNHOVER_SCRIPT,177,41,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CLICK_TRIGGER,177,57,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FEEDBACK_STRING,177,73,135,14,ES_AUTOHSCROLL
+    CONTROL         "Transform cursor",IDC_IS_TRANSFORM_CURSOR,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,91,69,10
+    EDITTEXT        IDC_LEFT_RECT,25,116,35,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TOP_RECT,25,135,35,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RIGHT_RECT,80,115,35,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BOTTOM_RECT,80,135,35,14,ES_AUTOHSCROLL
+    LISTBOX         IDC_LIST_INTERACTION,175,106,87,51,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_FILESET_ID,62,171,40,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_INTERATION_TYPE,62,188,74,53,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_INTERACTION_SUB_TYPE,62,203,74,44,
+                    CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_DESCRIPTION,62,218,234,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TRIGGER_SCRIPT,203,188,30,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Add",IDC_ADD,267,107,30,14
+    PUSHBUTTON      "Edit",IDC_EDIT,267,124,30,14
+    PUSHBUTTON      "Delete",IDC_DELETE,267,142,30,14
+    PUSHBUTTON      "Up",IDC_UP,140,124,30,14
+    PUSHBUTTON      "Down",IDC_DOWN,140,142,30,14
+    CONTROL         "Spin1",IDC_SPIN_X1,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_ARROWKEYS | UDS_NOTHOUSANDS,49,115,
+                    10,14
+    CONTROL         "Spin3",IDC_SPIN_X2,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_ARROWKEYS | UDS_NOTHOUSANDS,103,113,
+                    10,14
+    CONTROL         "Interaction enabled",IDC_IS_INTERACTION_ENABLED,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,161,176,77,10
+    LTEXT           "Hotspot ID",IDC_STATIC,7,8,35,8
+    EDITTEXT        IDC_HOT_SPOT_ID,56,7,40,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Hotspot mode",IDC_STATIC,7,28,45,8
+    LTEXT           "Image ID",IDC_STATIC,7,45,30,8
+    LTEXT           "Animation ID",IDC_STATIC,7,60,41,8
+    LTEXT           "Character ID",IDC_STATIC,7,76,41,8
+    LTEXT           "X1",IDC_STATIC,11,118,10,8
+    LTEXT           "Y1",IDC_STATIC,11,136,10,8
+    LTEXT           "X2",IDC_STATIC,70,118,10,8
+    LTEXT           "Y2",IDC_STATIC,68,138,10,8
+    LTEXT           "Hover script",IDC_STATIC,122,28,39,8
+    LTEXT           "UnHover script",IDC_STATIC,122,45,48,8
+    LTEXT           "Feedback string",IDC_STATIC,122,76,51,8
+    LTEXT           "Click trigger",IDC_STATIC,122,60,38,8
+    GROUPBOX        "Hotspot region",IDC_STATIC,7,104,111,51
+    LTEXT           "Type",IDC_STATIC,15,192,17,8
+    LTEXT           "Sub type",IDC_STATIC,15,207,29,8
+    LTEXT           "Description",IDC_STATIC,15,222,36,8
+    LTEXT           "Trigger script",IDC_STATIC,158,192,42,8
+    LTEXT           "FilesetID",IDC_STATIC,15,176,28,8
+    GROUPBOX        "Interaction setting",IDC_STATIC,7,159,295,82
+    LTEXT           "Interaction list",IDC_STATIC,176,96,44,8
+    CONTROL         "Spin2",IDC_SPIN_Y1,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_ARROWKEYS | UDS_NOTHOUSANDS,51,135,
+                    10,14
+    CONTROL         "Spin4",IDC_SPIN_Y2,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_ARROWKEYS | UDS_NOTHOUSANDS,105,132,
+                    10,14
+END
+
+IDD_KEYBOARD_TRIGGER DIALOG DISCARDABLE  0, 0, 287, 198
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Key ID",IDC_STATIC,8,10,22,8
+    EDITTEXT        IDC_KEY_ID,51,8,40,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Key code",IDC_STATIC,8,28,31,8
+    EDITTEXT        IDC_KEY_CODE,51,26,40,14,ES_AUTOHSCROLL
+    LTEXT           "Trigger script",IDC_STATIC,8,47,42,8
+    CONTROL         "Enabled trigger",IDC_IS_TRIGGER_ENABLED,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,8,64,63,10
+    EDITTEXT        IDC_TRIGGER_SCRIPT,51,44,40,14,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_KEY_CODE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,89,26,10,14
+END
+
+IDD_EMPTY_FORM DIALOG DISCARDABLE  0, 0, 186, 95
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+IDD_NEW_NODE DIALOG DISCARDABLE  0, 0, 183, 74
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "New"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_ID,59,7,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_FILE_NAME,59,25,100,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BROWSE,161,25,14,14
+    DEFPUSHBUTTON   "OK",IDOK,66,53,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,126,53,50,14
+    LTEXT           "Unique ID",IDC_LABEL2,8,10,39,8
+    LTEXT           "File Name",IDC_FILE_NAME_LABEL,8,29,50,8
+    LTEXT           "Scene ID",IDC_LABEL,7,10,40,8,NOT WS_VISIBLE
+    COMBOBOX        IDC_COMBO_SCENE_ID,59,8,48,70,CBS_DROPDOWNLIST | 
+                    CBS_SORT | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About WorldConstructKit"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "WorldConstructKit Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2002",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_WORLD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 202
+    END
+
+    IDD_MUSIC_SCRIPT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 180
+    END
+
+    IDD_MUSIC_SAMPLE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 252
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 165
+    END
+
+    IDD_SCENE_DEFINITION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 213
+    END
+
+    IDD_SKY_DEFINITION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 268
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 194
+    END
+
+    IDD_ITEM_DEFINITION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 315
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 205
+    END
+
+    IDD_CAMERA_DEFINITION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 274
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 220
+    END
+
+    IDD_STAGING_INFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 326
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 243
+    END
+
+    IDD_IMAGE_INFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 298
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 237
+    END
+
+    IDD_ANIMATION_INFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 311
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 203
+    END
+
+    IDD_CHARACTER_INFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 274
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 241
+    END
+
+    IDD_CHARACTER_CONTEXT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 293
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 224
+    END
+
+    IDD_SFX_INFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 226
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 190
+    END
+
+    IDD_TEXT_DISPLAY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 312
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 239
+    END
+
+    IDD_HOT_SPOT_INFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 312
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 241
+    END
+
+    IDD_KEYBOARD_TRIGGER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 280
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 191
+    END
+
+    IDD_EMPTY_FORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_NEW_NODE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 176
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 67
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_CAMERA_DEFINITION DLGINIT
+BEGIN
+    IDC_COMBO_LAYER, 0x403, 23, 0
+0x2031, 0x6f66, 0x2072, 0x616e, 0x6976, 0x6167, 0x6c62, 0x2065, 0x6373, 
+0x6e65, 0x7365, "\000" 
+    IDC_COMBO_LAYER, 0x403, 21, 0
+0x2032, 0x6f66, 0x2072, 0x6f6e, 0x2d6e, 0x616e, 0x6976, 0x6167, 0x6c62, 
+0x2065, "\000" 
+    IDC_COMBO_LAYER, 0x403, 28, 0
+0x2033, 0x6f66, 0x2072, 0x7073, 0x6365, 0x6169, 0x2d6c, 0x6361, 0x6974, 
+0x6e6f, 0x7320, 0x6563, 0x656e, 0x0073, 
+    IDC_COMBO_LAYER, 0x403, 21, 0
+0x2034, 0x6f66, 0x2072, 0x6373, 0x6e65, 0x2065, 0x766f, 0x7265, 0x616c, 
+0x7379, "\000" 
+    IDC_COMBO_LAYER, 0x403, 39, 0
+0x2035, 0x6f66, 0x2072, 0x7473, 0x6e61, 0x6164, 0x6472, 0x7520, 0x6573, 
+0x2d72, 0x6e69, 0x6574, 0x6672, 0x6361, 0x2065, 0x6c65, 0x6d65, 0x6e65, 
+0x7374, "\000" 
+    IDC_COMBO_LAYER, 0x403, 31, 0
+0x2036, 0x6f66, 0x2072, 0x7375, 0x7265, 0x692d, 0x746e, 0x7265, 0x6166, 
+0x6563, 0x6f20, 0x6576, 0x6c72, 0x7961, 0x2073, "\000" 
+    0
+END
+
+IDD_TEXT_DISPLAY DLGINIT
+BEGIN
+    IDC_COMBO_TEXT_TYPE, 0x403, 11, 0
+0x5854, 0x5f54, 0x5453, 0x4952, 0x474e, "\000" 
+    IDC_COMBO_TEXT_TYPE, 0x403, 14, 0
+0x5854, 0x5f54, 0x4546, 0x4445, 0x4142, 0x4b43, 0x0020, 
+    0
+END
+
+IDD_MUSIC_SCRIPT DLGINIT
+BEGIN
+    IDC_COMBO_COMMAND_ARR, 0x403, 10, 0
+0x4d43, 0x5f44, 0x4c50, 0x5941, 0x0020, 
+    IDC_COMBO_COMMAND_ARR, 0x403, 12, 0
+0x4d43, 0x5f44, 0x4e49, 0x4c50, 0x5941, 0x0020, 
+    IDC_COMBO_COMMAND_ARR, 0x403, 13, 0
+0x4d43, 0x5f44, 0x4146, 0x4544, 0x554f, 0x2054, "\000" 
+    IDC_COMBO_COMMAND_ARR, 0x403, 10, 0
+0x4d43, 0x5f44, 0x5453, 0x504f, 0x0020, 
+    IDC_COMBO_COMMAND_ARR, 0x403, 10, 0
+0x4d43, 0x5f44, 0x4157, 0x5449, 0x0020, 
+    IDC_COMBO_COMMAND_ARR, 0x403, 11, 0
+0x4d43, 0x5f44, 0x4150, 0x5355, 0x2045, "\000" 
+    0
+END
+
+IDD_ITEM_DEFINITION DLGINIT
+BEGIN
+    IDC_COMBO_INTERATION_TYPE, 0x403, 10, 0
+0x4e4d, 0x535f, 0x4e45, 0x4553, 0x0053, 
+    IDC_COMBO_INTERATION_TYPE, 0x403, 10, 0
+0x4e4d, 0x415f, 0x5443, 0x4f49, 0x004e, 
+    IDC_COMBO_INTERATION_TYPE, 0x403, 13, 0
+0x4e4d, 0x495f, 0x564e, 0x4e45, 0x4f54, 0x5952, "\000" 
+    IDC_COMBO_INTERATION_TYPE, 0x403, 12, 0
+0x4e4d, 0x4e5f, 0x5641, 0x4749, 0x5441, 0x0045, 
+    IDC_COMBO_INTERACTION_SUB_TYPE, 0x403, 9, 0
+0x5553, 0x5f42, 0x4f4c, 0x4b4f, "\000" 
+    IDC_COMBO_INTERACTION_SUB_TYPE, 0x403, 10, 0
+0x5553, 0x5f42, 0x4d53, 0x4c45, 0x004c, 
+    IDC_COMBO_INTERACTION_SUB_TYPE, 0x403, 10, 0
+0x5553, 0x5f42, 0x4154, 0x5453, 0x0045, 
+    IDC_COMBO_INTERACTION_SUB_TYPE, 0x403, 12, 0
+0x5553, 0x5f42, 0x4554, 0x5458, 0x5255, 0x0045, 
+    IDC_COMBO_INTERACTION_SUB_TYPE, 0x403, 10, 0
+0x5553, 0x5f42, 0x4f53, 0x4e55, 0x0044, 
+    0
+END
+
+IDD_HOT_SPOT_INFO DLGINIT
+BEGIN
+    IDC_COMBO_HOT_SPOT_MODE, 0x403, 9, 0
+0x5448, 0x495f, 0x414d, 0x4547, "\000" 
+    IDC_COMBO_HOT_SPOT_MODE, 0x403, 8, 0
+0x5448, 0x415f, 0x494e, 0x004d, 
+    IDC_COMBO_HOT_SPOT_MODE, 0x403, 8, 0
+0x5448, 0x435f, 0x4148, 0x0052, 
+    IDC_COMBO_HOT_SPOT_MODE, 0x403, 8, 0
+0x5448, 0x525f, 0x4345, 0x0054, 
+    IDC_COMBO_INTERATION_TYPE, 0x403, 10, 0
+0x4e4d, 0x535f, 0x4e45, 0x4553, 0x0053, 
+    IDC_COMBO_INTERATION_TYPE, 0x403, 10, 0
+0x4e4d, 0x415f, 0x5443, 0x4f49, 0x004e, 
+    IDC_COMBO_INTERATION_TYPE, 0x403, 13, 0
+0x4e4d, 0x495f, 0x564e, 0x4e45, 0x4f54, 0x5952, "\000" 
+    IDC_COMBO_INTERATION_TYPE, 0x403, 12, 0
+0x4e4d, 0x4e5f, 0x5641, 0x4749, 0x5441, 0x0045, 
+    IDC_COMBO_INTERACTION_SUB_TYPE, 0x403, 9, 0
+0x5553, 0x5f42, 0x4f4c, 0x4b4f, "\000" 
+    IDC_COMBO_INTERACTION_SUB_TYPE, 0x403, 10, 0
+0x5553, 0x5f42, 0x4d53, 0x4c45, 0x004c, 
+    IDC_COMBO_INTERACTION_SUB_TYPE, 0x403, 10, 0
+0x5553, 0x5f42, 0x4154, 0x5453, 0x0045, 
+    IDC_COMBO_INTERACTION_SUB_TYPE, 0x403, 12, 0
+0x5553, 0x5f42, 0x4554, 0x5458, 0x5255, 0x0045, 
+    IDC_COMBO_INTERACTION_SUB_TYPE, 0x403, 10, 0
+0x5553, 0x5f42, 0x4f53, 0x4e55, 0x0044, 
+    0
+END
+
+IDD_STAGING_INFO DLGINIT
+BEGIN
+    IDC_LIGHTING_MODE, 0x403, 8, 0
+0x544c, 0x4f5f, 0x4646, 0x0020, 
+    IDC_LIGHTING_MODE, 0x403, 9, 0
+0x544c, 0x535f, 0x4c4f, 0x4449, "\000" 
+    IDC_LIGHTING_MODE, 0x403, 10, 0
+0x544c, 0x4d5f, 0x5041, 0x4550, 0x0044, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\WorldConstructKit.ico"
+IDR_WORLDCTYPE          ICON    DISCARDABLE     "res\\WorldConstructKitDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_NEW
+    BUTTON      ID_SAVE
+    BUTTON      ID_DELETE
+    SEPARATOR
+    BUTTON      ID_ADD_WORLD
+    BUTTON      ID_GET_DATA_FROM_DB
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New",                        ID_NEW
+        MENUITEM "&Save",                       ID_SAVE
+        MENUITEM "&Delete",                     ID_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "Add from DB",                 ID_ADD_WORLD
+        MENUITEM "Replace from DB",             ID_GET_DATA_FROM_DB
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About WorldConstructKit...", ID_APP_ABOUT
+    END
+    POPUP ""
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "D",            ID_DELETE,              VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_NEW,                 VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_SAVE,                VIRTKEY, CONTROL, NOINVERT
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "WorldConstructKit MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "WorldConstructKit\0"
+            VALUE "LegalCopyright", "Copyright (C) 2002\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "WorldConstructKit.EXE\0"
+            VALUE "ProductName", "WorldConstructKit Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "WorldConstructKit\n\nWorldC\n\n\nWorldConstructKit.Document\nWorldC Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "WorldConstructKit"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEW                  "\nAdd new object"
+    ID_SAVE                 "\nSave all data to file"
+    ID_DELETE               "\nDelete object"
+    ID_ADD_WORLD            "\nAdd data from DB file"
+    ID_GET_DATA_FROM_DB     "\nReplace data from DB file"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\WorldConstructKit.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
