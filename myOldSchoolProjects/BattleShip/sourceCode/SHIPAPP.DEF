@@ -1,0 +1,19 @@
+;------------------------------------------------
+;   Project ship
+;   
+;   Copyright © 1995. All Rights Reserved.
+;
+;   SUBSYSTEM:    ship.exe Module Defintion File
+;   FILE:         shipapp.def
+;   AUTHOR:       
+;
+;------------------------------------------------
+
+NAME ship
+
+DESCRIPTION 'ship Application - Copyright © 1995. All Rights Reserved.'
+EXETYPE     WINDOWS
+CODE        PRELOAD MOVEABLE DISCARDABLE
+DATA        PRELOAD MOVEABLE
+HEAPSIZE    4096
+STACKSIZE   8192

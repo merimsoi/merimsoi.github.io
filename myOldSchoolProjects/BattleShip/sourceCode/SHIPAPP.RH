@@ -1,0 +1,294 @@
+#define BITMAP_7	7
+#define BITMAP_5	5
+#define BITMAP_2	2
+#define IDS_STRING1	1
+#define CM_CON	22222
+#define CM_OPTIONS	24333
+#define CM_RAND	24322
+#define IDB_TOTAH	20
+#define IDB_TOTAH1	8
+#define BT_SECOND	502
+#define BT_FIRST	501
+#define IDM_ANIMATION	9
+#define IDM_SOUND	17
+#define IDM_QUICK	16
+#define IDB_FONE	6
+#define IDD_INFO	4
+#define IDC_SHOWINFO	101
+#define IDC_HIDEINFO	102
+#define IDB_IMGCORE	1
+#define IDB_MSCORE	4
+#define IDB_IMCORE	4
+#define CORE	3
+#define IDB_SHIPNO	104
+#define IDB_NOSHIP	105
+#define SOUND	5
+#define IDD_KIND	2
+#define IDC_PLAYCOM	102
+#define IDC_COMP	103
+#define IDC_PLAYER	101
+#define SETTINGSDLGBOX                  101
+#define IDB_MASK4	44
+#define IDB_MAS4	44
+#define IDB_MASK3	43
+#define IDB_MASK2	42
+#define IDB_MASK1	41
+#define TTYACCEL                        200
+#define IDM_CONNECT                     0x100
+#define IDM_EXIT                        0x102
+#define IDM_SETTINGS                    0x103
+#define IDM_ABOUT                       0x104
+#define IDM_NEW                         0x105
+#define TTYMENU                         300
+#define TTYICON                         400
+#define TTYBITMAP                       500
+#define IDD_ABOUTICON                   0x210
+#define IDD_VERSION                     0x212
+#define IDD_BYLINE                      0x213
+#define IDD_FREEMEM                     0x215
+#define IDD_RESOURCES                   0x216
+#define IDD_PORTCB                      0x220
+#define IDD_BAUDCB                      0x221
+#define IDD_DATABITSCB                  0x222
+#define IDD_PARITYCB                    0x223
+#define IDD_STOPBITSCB                  0x224
+#define IDD_DTRDSR                      0x225
+#define IDD_RTSCTS                      0x226
+#define IDD_XONXOFF                     0x227
+#define IDD_AUTOWRAP                    0x228
+#define IDD_NEWLINE                     0x229
+#define IDD_LOCALECHO                   0x22A
+#define IDD_FONT                        0x22B
+#define IDD_USECNRECEIVE                0x22C
+#define IDD_DISPLAYERRORS               0x22D
+#define IDS_BYLINE                      0x300
+#define IDS_MODE_STANDARD               0x301
+#define IDS_MODE_ENHANCED               0x302
+#define IDS_MODE_WLO                    0x303
+#define IDS_MODE_UNDEF                  0x304
+#define IDS_COMPREFIX                   0x310
+#define IDS_BAUD110                     0x320
+#define IDS_BAUD300                     0x321
+#define IDS_BAUD600                     0x322
+#define IDS_BAUD1200                    0x323
+#define IDS_BAUD2400                    0x324
+#define IDS_BAUD4800                    0x325
+#define IDS_BAUD9600                    0x326
+#define IDS_BAUD14400                   0x327
+#define IDS_BAUD19200                   0x328
+#define IDS_BAUD38400                   0x329
+#define IDS_BAUD56000                   0x32A
+#define IDS_BAUD128000                  0x32B
+#define IDS_BAUD256000                  0x32C
+#define IDS_PARITYNONE                  0x330
+#define IDS_PARITYEVEN                  0x331
+#define IDS_PARITYODD                   0x332
+#define IDS_PARITYMARK                  0x333
+#define IDS_PARITYSPACE                 0x334
+#define IDS_ONESTOPBIT                  0x340
+#define IDS_ONE5STOPBITS                0x341
+#define IDS_TWOSTOPBITS                 0x342
+
+//
+// IDHELP BorButton for BWCC dialogs.
+//
+#define IDHELP                  998             // Id of help button
+#define IDD_NAMES	22010
+#define IDB_MASK44	53
+#define IDB_MASK34	52
+#define IDB_MASK43	50
+#define IDB_MASK33	49
+#define IDB_MASK42	47
+#define IDB_MASK32	46
+#define IDB_IMAGE42	27
+#define IDB_IMAGE44	33
+#define IDB_IMAGE43	30
+#define IDB_IMAGE34	32
+#define IDB_IMAGE33	29
+#define IDB_IMAGE32	26
+#define IDB_MASK22	45
+#define IDB_MASK24	51
+#define IDB_MASK23	48
+#define IDB_IMAGE24	31
+#define IDB_IMAGE23	28
+#define IDB_IMAGE22	25
+#define IDB_IMAGE13	35
+#define IDD_NAMES	22010
+#define IDB_IMAGE2	22
+#define IDB_IMAGE3	23
+#define IDB_IMAGE4	24
+#define IDB_IMAGE1	21
+#define IDB_SHIP1	11
+#define IDB_SHIP4	14
+#define IDB_SHIP3	13
+#define IDB_SHIP2	12
+#define CM_GAMENEW          211
+#define CM_GAMESTART          210
+#define CM_GAMEOPTIONS      212
+#define CM_ABOUT            213
+
+#define CM_CONNECT  214
+#define CM_SQUARE           100
+#define IDI_TTT             510
+#define IDD_OPTIONS         202
+#define IDSTATIC            502
+#define IDYOU               102
+#define IDME                103
+#define IDYOUMEGROUP        104
+#define IDXOGROUP           105
+#define IDO                 106
+#define IDX                 107
+
+#define IDB_EMPTY           100
+#define IDB_EMPTY_SEL       101
+#define IDB_SHIP            102
+#define IDB_KILLSHIP        103
+
+//
+// Application specific definitions:
+//
+#define IDI_SDIAPPLICATION      1001            // Application icon
+#define SDI_MENU                100             // Menu resource ID and Accelerator IDs
+#define CM_INFO	24355
+#define CM_SOUNDYES	1040
+#define CM_SPEEDFAST	112
+#define CM_ANIMATIONNO	110
+#define CM_ANIMATIONYES	109
+#define IDM_DISCONNECT	215
+#define CM_STOP	3333
+#define CM_SPEED	24357
+#define CM_BEGIN	24352
+#define CM_RANDOMIZE	24354
+#define CM_KIND	24351
+#define RIGHT_MENU 101
+#define CM_REMOVE	24322
+#define CM_MOVE	24321
+
+//
+// CM_FILEnnnn commands (include\owl\editfile.rh except for CM_FILEPRINTPREVIEW)
+//
+#define CM_FILESAVE             24333
+//
+// Window commands (include\owl\window.rh)
+//
+#define CM_EXIT                 24310
+//
+// CM_EDITnnnn commands (include\owl\window.rh)
+//
+#define CM_EDITUNDO             24321
+#define CM_EDITCUT              24322
+#define CM_EDITCOPY             24323
+#define CM_EDITPASTE            24324
+#define CM_EDITDELETE           24325
+#define CM_EDITCLEAR            24326
+
+
+//
+// Search menu commands (include\owl\editsear.rh)
+//
+#define CM_EDITFIND             24351
+#define CM_EDITFINDNEXT         24353
+
+
+//
+// Help menu commands.
+//
+#define CM_HELPCONTENTS         2001
+#define CM_HELPUSING            2002
+#define CM_HELPABOUT            2009
+
+
+// Context sensitive help cursor.
+#define IDC_HELPCURSOR          24000
+
+
+//
+// About Dialogs
+//
+#define IDD_ABOUT               22000
+#define IDC_DEBUG               22003
+//
+// OWL defined strings
+//
+// Statusbar
+#define IDS_MODES               32530
+#define IDS_MODESOFF            32531
+// EditFile
+#define IDS_UNTITLED            32550
+#define IDS_UNABLEREAD          32551
+#define IDS_UNABLEWRITE         32552
+#define IDS_FILECHANGED         32553
+#define IDS_FILEFILTER          32554
+
+// EditSearch
+#define IDS_CANNOTFIND          32540
+
+
+//
+// General & application exception messages (include\owl\except.rh)
+//
+#define IDS_UNKNOWNEXCEPTION    32767
+#define IDS_OWLEXCEPTION        32766
+#define IDS_OKTORESUME          32765
+#define IDS_UNHANDLEDXMSG       32764
+#define IDS_UNKNOWNERROR        32763
+#define IDS_NOAPP               32762
+#define IDS_OUTOFMEMORY         32761
+#define IDS_INVALIDMODULE       32760
+#define IDS_INVALIDMAINWINDOW   32759
+#define IDS_VBXLIBRARYFAIL      32758
+
+//
+// Owl 1 compatibility messages
+//
+#define IDS_INVALIDWINDOW       32756
+#define IDS_INVALIDCHILDWINDOW  32755
+#define IDS_INVALIDCLIENTWINDOW 32754
+
+//
+// TXWindow messages
+//
+#define IDS_CLASSREGISTERFAIL   32749
+#define IDS_CHILDREGISTERFAIL   32748
+#define IDS_WINDOWCREATEFAIL    32747
+#define IDS_WINDOWEXECUTEFAIL   32746
+#define IDS_CHILDCREATEFAIL     32745
+
+#define IDS_MENUFAILURE         32744
+#define IDS_VALIDATORSYNTAX     32743
+#define IDS_PRINTERERROR        32742
+
+#define IDS_LAYOUTINCOMPLETE    32741
+#define IDS_LAYOUTBADRELWIN     32740
+
+//
+// TXGdi messages
+//
+#define IDS_GDIFAILURE          32739
+#define IDS_GDIALLOCFAIL        32738
+#define IDS_GDICREATEFAIL       32737
+#define IDS_GDIRESLOADFAIL      32736
+#define IDS_GDIFILEREADFAIL     32735
+#define IDS_GDIDELETEFAIL       32734
+#define IDS_GDIDESTROYFAIL      32733
+#define IDS_INVALIDDIBHANDLE    32732
+
+
+// TInputDialog DIALOG resource (include\owl\inputdia.rh)
+#define IDD_INPUTDIALOG         32514
+#define ID_PROMPT               4091
+#define ID_INPUT                4090
+#define ID_SERVER	4090
+#define IDC_YOUR	4091
+
+
+// TSlider bitmaps (horizontal and vertical) (include\owl\slider.rh)
+
+
+// Validation messages (include\owl\validate.rh)
+#define IDS_VALPXPCONFORM       32520
+#define IDS_VALINVALIDCHAR      32521
+#define IDS_VALNOTINRANGE       32522
+#define IDS_VALNOTINLIST        32523
+
+//#endif         // __shipapp_rh sentry.
