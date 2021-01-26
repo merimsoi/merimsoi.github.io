@@ -8,9 +8,8 @@ async function request() {
 }
 
 export function* fetchList() {
-  console.log('saga fetchList called!');
+  
   const myListResponse = yield request();
-  console.log('from saga:', myListResponse);
   yield put({ type: 'FETCH_LIST_SUCCEED', list: myListResponse });
 }
 
