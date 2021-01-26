@@ -34,6 +34,13 @@ namespace mvcAndReact.Controllers
             list.Add(new Artist { Id = "2", Name = "AKA", Genre = "Hip-Hop", Albums = "4", Counrty = "South-Africa" });
             list.Add(new Artist { Id = "3", Name = "Seyi Shay", Genre = "R&B", Albums = "2", Counrty = "Nigeria" });
             list.Add(new Artist { Id = "4", Name = "Sauti Sol", Genre = "Soul", Albums = "3", Counrty = "Kenya" });
+            list.Add(new Artist { Id = "5", Name = "Nataly Orlov", Genre = "Afro-Pop", Albums = "2", Counrty = "Nigeria" });
+            list.Add(new Artist { Id = "6", Name = "Justing Biber", Genre = "Hip-Hop", Albums = "4", Counrty = "South-Africa" });
+            list.Add(new Artist { Id = "7", Name = "Sergei Apelbaum", Genre = "R&B", Albums = "2", Counrty = "Nigeria" });
+            list.Add(new Artist { Id = "8", Name = "Galina NoName", Genre = "Soul", Albums = "3", Counrty = "Kenya" });
+            list.Add(new Artist { Id = "9", Name = "Justing Biber", Genre = "Hip-Hop", Albums = "4", Counrty = "South-Africa" });
+            list.Add(new Artist { Id = "10", Name = "Sergei Apelbaum", Genre = "R&B", Albums = "2", Counrty = "Nigeria" });
+            list.Add(new Artist { Id = "11", Name = "Galina NoName", Genre = "Soul", Albums = "3", Counrty = "Kenya" });
 
             return Json(list);
         }
