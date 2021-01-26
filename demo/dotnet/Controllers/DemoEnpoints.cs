@@ -38,6 +38,9 @@ namespace mvcAndReact.Controllers
             list.Add(new Artist { Id = "6", Name = "Justing Biber", Genre = "Hip-Hop", Albums = "4", Counrty = "South-Africa" });
             list.Add(new Artist { Id = "7", Name = "Sergei Apelbaum", Genre = "R&B", Albums = "2", Counrty = "Nigeria" });
             list.Add(new Artist { Id = "8", Name = "Galina NoName", Genre = "Soul", Albums = "3", Counrty = "Kenya" });
+            list.Add(new Artist { Id = "9", Name = "Justing Biber", Genre = "Hip-Hop", Albums = "4", Counrty = "South-Africa" });
+            list.Add(new Artist { Id = "10", Name = "Sergei Apelbaum", Genre = "R&B", Albums = "2", Counrty = "Nigeria" });
+            list.Add(new Artist { Id = "11", Name = "Galina NoName", Genre = "Soul", Albums = "3", Counrty = "Kenya" });
 
             return Json(list);
         }
